@@ -1,1239 +1,1000 @@
 
 % time: Thursday 09:00
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58123-der-digitale-zwilling-so-wertvoll-wie-eine-karte-im-mastab-1-1/
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84107-trailscan-qgis-plugin-zur-kartierung-forstlicher-ruckegassen-in-laserscanning-daten/
 
 %
 \newTimeslot{09:00}
-\noindent\abstractHSeins{%
-  Matthias Daues%
-}{%
-  Der Digitale Zwilling~-- so wertvoll wie eine Karte im Maßstab 1:1%
-}{%
-}{%
-  Digitale Zwillinge sind heute in aller Munde: Ein Allheilmittel für Probleme der räumlichen
-  Modellierung. Aber stimmt das? Übersehen wir da nicht im Rausch des Machbaren die Frage nach dem
-  Sinnvollen?
-  Ein "`Rant"' gegen die "`Landkarte im Maßstab 1:1"'.%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 09:00
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58195-routing-aber-mehr-explorativ-statt-automatisch/
-
-%
-
 \noindent\abstractHSzwei{%
-  Katharina Rasch%
+  Tanja Kempen%
 }{%
-  Routing, aber mehr explorativ statt automatisch%
-}{%
-}{%
-  Bei langen Zugreisen quer durch Europa ist auch immer ein bisschen der Weg das Ziel. Beim Planen
-  solcher Reisen ist für mich der von Routingtools vorgeschlagene Reiseplan oft nur ein
-  Ausgangspunkt. Ich möchte easy den Plan anpassen können, Verbindungen hin und her schieben,
-  schauen, wie sich das auswirkt; vielleicht hier eine Übernachtung einlegen, oder dort;  vielleicht
-  einen Umweg über eine Stadt, in der ich noch nie war. Genau dafür baue ich eine UI und von der
-  möchte ich euch gern erzählen.%
-}%
-
-\pagebreak
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 09:00
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58261-anreicherung-von-straendaten-mittels-deep-learning-methoden-und-mapillary-bildern/
-
-%
-
-\noindent\abstractHSdrei{%
-  Benjamin Herfort, Sukanya Randhawa%
-}{%
-  Anreicherung von Straßendaten mittels Deep-Learning-Methoden und Mapillary Bildern%
+  TrailScan: QGIS-Plugin zur Kartierung forstlicher Rückegassen in Laserscanning Daten%
 }{%
 }{%
-  Wir haben einen globalen Datensatz zu Straßeneigenschaften ("befestigt"' oder "`unbefestigt")
-  mithilfe von KI-Methoden erstellt, basierend auf 105 Millionen Bildern von Mapillary . Unser
-  Ansatz kombiniert SWIN-Transformer-Vorhersagen des Straßenbelags mit einer CLIP-Filterung
-  minderwertiger Bilder. Der Datensatz deckt 36 \% des weltweiten Straßennetzes ab, wobei die
-  Abdeckung in Städten höher ist. Er kann in der Stadtplanung, im Katastrophenmanagement, in der
-  Logistik genutzt werden.%
+  Im Waldbodenschutz spielen Rückegassen eine wichtige Rolle, da sie die Befahrung mit schweren
+  Maschinen auf festgelegte Bereiche reduzieren sollen. Mit dem neuen **QGIS-Plugin TrailScan**
+  können diese Flächen im Wald automatisiert kartiert werden. Für die Anwendung werden **frei
+  verfügbare Airborne Laserscanning Daten** verwendet. Das Plugin nutzt **PDAL** zur Prozessierung
+  der 3D-Punktwolken. Mithilfe eines **CNN-Modells** werden dann Raster-Karten mit den Rückegassen
+  ausgegeben.%
 }%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% time: Thursday 09:00
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57589-g3w-suite-das-os-framework-fr-die-verffentlichung-und-verwaltung-von-qgis-projekte/
+% time: Thursday 09:05
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84286-routing-to-go-openrouteservice-in-qfield/
 
 %
-
+\newTimeslot{09:05}
 \noindent\abstractHSvier{%
-  Walter Lorenzetti, Antonello Andrea%
+  Till Frankenbach, Julian Psotta%
 }{%
-  G3W-SUITE: das OS-Framework für die Veröffentlichung und Verwaltung von QGIS-Projekte%
+  Routing to Go: openrouteservice in QField%
 }{%
 }{%
-  G3W-SUITE ist eine modulare Client-Server-Anwendung (basierend auf QGIS-Server) für die Verwaltung
-  und Veröffentlichung von interaktiven kartographischen QGIS-Projekten verschiedener Art auf eine
-  völlig unabhängige, einfache und schnelle Weise.
-  Die Anwendung, die auf GitHub unter der Mozilla Public Licence 2.0 veröffentlicht wurde, ist mit
-  den QGIS LTR Versionen kompatibel und basiert auf einer starken Integration mit der QGIS API.%
+  Routing direkt im Feld: ORStools und QField bringen openrouteservice auf mobile Geräte~-- ein
+  Ausblick.%
 }%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% time: Thursday 09:00
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57915-kartographie-mit-qgis/
+% time: Thursday 09:10
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-83601-qgis-plugins-unter-qgis4-qt6-lauffahig-machen/
 
 %
-
-\noindent\abstractAnwBoFeins{%
-  Mathias Gröbe, Andreas Neumann%
+\newTimeslot{09:10}
+\noindent\abstractHSvier{%
+  Johannes Kröger%
 }{%
-  Kartographie mit QGIS%
+  QGIS-Plugins unter QGIS4/Qt6 lauffähig machen%
 }{%
 }{%
-  QGIS bringt inzwischen viele für die Kartenherstellung relevante Funktionen mit~-- aber die ein
-  oder andere Funktion wäre noch wünschenswert. Die Session soll die Möglichkeit bieten, sich über
-  Lösungen auszutauschen, Ideen zu entwickeln und zu überlegen, wie man das ein oder andere noch in
-  QGIS implementieren könnte.%
+  QGIS 4, auf Basis von Version 6 des Qt-Frameworks, ist gerade frisch erschienen und (d)ein Plugin
+  läuft noch nicht damit? Ich zeige eine kurze Übersicht zu den nötigen Schritten zur Portierung,
+  sowie zu hilfreichen Tools und bekannten Fallstricken.%
 }%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% time: Thursday 09:00
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58019-openstreetmap-fr-und-mit-ffentlicher-verwaltung-und-behrden/
+% time: Thursday 09:15
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84019-qfield-plugin-entwicklung-lernen/
 
 %
-
-\noindent\abstractAnwBoFdrei{%
-  Lars Lingner, Christopher Lorenz, Tobias Jordans%
+\newTimeslot{09:15}
+\noindent\abstractHSvier{%
+  Heather Hillers%
 }{%
-  OpenStreetMap für und mit  öffentlicher Verwaltung und Behörden%
+  QField Plugin Entwicklung lernen%
 }{%
 }{%
-  Wie können Daten für OpenStreetMap zur Verfügung gestellt werden und wie stellt OpenStreetMap
-  Daten zur Verfügung? Welche best practices gibt es und welche Sackgassen? Diese Fragestunde ist
-  ein Angebot an Fachanwender:innen und andere Mitarbeiter:innen in öffentlicher Verwaltung und
-  Behörden.%
+  Das QField Vegetation Plugin-Projekt bietet Codebeispiele und Dokumentation, die Sie durch die
+  Entwicklung eines eigenen QField Plugins führen. Es demonstriert Feature-Selektion,
+  Feature-Bearbeitung und mehrere nützlicher Widgets. Wir präsentieren das Plugin kurz und geben
+  Orientierungshilfen für den Lernpfad der QField Plugin-Entwicklung.%
 }%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % time: Thursday 09:35
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58084-der-wuppertaler-weg-vom-geoportal-zum-digitalen-zwilling/
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-82300-qgis-formulare-effizienzsteigerung-bei-der-erfassung-von-umweltinformationen-des-nok/
 
 %
 \newTimeslot{09:35}
 \noindent\abstractHSeins{%
-  Stefan Sander%
+  Niny Zamora%
 }{%
-  Der Wuppertaler Weg vom Geoportal zum Digitalen Zwilling%
+  QGIS-Formulare Effizienzsteigerung bei der Erfassung von Umweltinformationen des NOK%
 }{%
 }{%
-  Die Stadt Wuppertal realisiert in einem bis Ende 2026 laufenden Förderprojekt einen Urbanen
-  Digitalen Zwilling (UDZ), den "`DigiTal Zwilling"'. In diesem Vortrag werden sie softwaretechnischen
-  Herausforderungen und Lösungsansätze bei der Entwicklung der Anwendungskomponenten zum DigiTal
-  Zwilling vorgestellt. Insbesondere entsteht eine generische Anwendung, die den Erwartungen an
-  einen UDZ gerecht werden soll, aber auch die klassischen Anwendungsfälle eines kommunalen
-  Geoportals bedienen soll.%
+  Die Benutzerfreundlichkeit der Datenerfassung in QGIS lässt sich durch den Einsatz von Formularen
+  erheblich verbessern. In diesem Vortrag wird am Beispiel der Verwaltung der vielfältigen
+  Umweltinformationen beim Ausbau des Nord-Ostsee-Kanals gezeigt, wie Formulare konfiguriert werden
+  und durch Ausdrücke und Python-Skripte eine Erfassung standardisierter Informationen bequem
+  umgesetzt werden kann. Die zu erfassenden Informationen werden durch ein selbst entwickeltes
+  Plugin gefiltert und angezeigt%
 }%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % time: Thursday 09:35
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58082-flexibles-open-source-routing-mit-valhalla/
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84044-lidar-fusion-fur-resiliente-walder-fossgis-zur-integration-von-mls-uls-und-als/
 
 %
 
 \noindent\abstractHSzwei{%
-  Christian Beiwinkel%
+  Svenja Dobelmann%
 }{%
-  Flexibles Open Source Routing mit Valhalla%
+  LiDAR-Fusion für resiliente Wälder: FOSSGIS zur Integration von MLS, ULS und ALS%
 }{%
 }{%
-  Valhalla ist eine vielseitige Routing Engine für das OSM Ökosystem, die vor allem durch ihre
-  Flexibilität und RAM-Effizienz glänzt. Dieser Vortrag setzt sich zusammen aus einer allgemeinen
-  Einführung in Valhalla sowie Updates zu neuen und verbesserten Features.%
+  LiDAR-Technologien verändern die Art und Weise, wie wir Wälder erfassen und verstehen. Im Rahmen
+  des Projekts FoResLab werden Daten aus mobilen, UAV- und flugzeugbasierten Scans kombiniert, um
+  Waldstrukturen präzise zu analysieren und Indikatoren der Waldresilienz abzuleiten. Mithilfe
+  freier Software wie QGIS und PDAL, innovativer Online-Tools wie der RSDB sowie leistungsstarker
+  HPC-Systeme entwickeln wir effiziente und transparente Workflows die in dem Beitrag gezeigt und
+  diskutiert werden.%
 }%
 
-\pagebreak
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % time: Thursday 09:35
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58250-versiegelungsanalyse-zur-bioklimatischen-bewertung-von-stadtgebieten/
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-83562-serious-vectorlayering-goodbye-wms-getmap-und-getfeatureinfo/
 
 %
 
 \noindent\abstractHSdrei{%
-  Markus Metz, Markus Eichhorn, Victoria-Leandra Brunn, Anika Weinmann%
+  Thorsten Hell%
 }{%
-  Versiegelungsanalyse zur bioklimatischen Bewertung von Stadtgebieten%
+  Serious Vectorlayering: Goodbye WMS GetMap und GetFeatureInfo%
 }{%
 }{%
-  Für eine bioklimatische Bewertung des Stadtgebietes Düsseldorf wurde der Grad der Versiegelung
-  erfasst, wobei verschiedene Arten von vollversiegelten, teilversiegelten und unversiegelten
-  Flächen unterschieden wurden. Zusätzlich wurde hohe Vegetation über diesen Flächen erfasst. Für
-  diese Klassifikation wurde ein neuronales Netz (U-Net) trainiert und auf die Jahre 2021, 2022 und
-  2023 angewendet.%
+  Wir zeigen, wie man mit wenigen, gezielten Anpassungen beim Einsatz von Vectorlayern in der
+  Webkartographie automatisch zu besseren Ergebnissen kommt. Dieses Prinzip, bekannt als "`Falling in
+  the pit of success"', bedeutet, dass durch durchdachte Prinzipien und gutes Design verlässliche
+  Resultate ohne zusätzlichen Aufwand entstehen. Beispiele aus dem Digitalen Zwilling Wuppertal
+  zeigen, wie sich Performance, Darstellung und Interaktion spürbar verbessern.%
 }%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % time: Thursday 09:35
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58149-historische-karten-mit-qgis-georeferenzieren/
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-82991-hyperspektrale-erdbeobachtung-in-der-praxis-die-enmap-box-in-qgis/
 
 %
 
 \noindent\abstractHSvier{%
-  Niklas Alt, Johannes Wagner%
+  Benjamin Jakimow%
 }{%
-  Historische Karten mit QGIS\linebreak georeferenzieren%
+  Hyperspektrale Erdbeobachtung in der Praxis~-- Die EnMAP-Box in QGIS%
 }{%
 }{%
-  Dank umfangreicher Digitalisierungskampagnen steht historisch Interessierten ein enormer Schatz an
-  kartografischen Produkten aus mehr als zwei Jahrhunderten zur Verfügung. Mit dem
-  QGIS-Georeferencer können diese einfach und niedrigschwellig für die Nutzung im beliebten
-  Geoinformationssystem aufbereitet werden. Wir demonstrieren die wichtigsten Vorgehensweisen,
-  weisen auf Fallstricke hin und geben wertvolle Produktivitätstipps für die Referenzierung.%
+  Die EnMAP-Box ist ein QGIS Plugin zur Visualisierung, Analyse und Prozessierung von hyper- und
+  multispektralen Erdbeobachtungsdaten. Unsere Demo zeigt, wie EnMAP-Daten bezogen und in der
+  EnMAP-Box fachgerecht ausgewertet werden können.%
 }%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% time: Thursday 10:00
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58083-masterportal-liegenschaftsauskunft-onlika-4-0-mit-keycloak-und-bundid/
+% time: Thursday 10:10
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84215-forestpulse-geodatendienste-fur-deutschlands-walder/
 
 %
-\newTimeslot{10:00}
-\noindent\abstractHSeins{%
-  Laura Meierkort%
-}{%
-  Masterportal~-- Liegenschaftsauskunft ONLIKA 4.0 mit Keycloak und BundID%
-}{%
-}{%
-  Im Rahmen dieses Vortrags wird die \glqq Online-Auskunft für die Daten des Liegenschaftskatasters\grqq\ 
-  Thüringen~-- kurz ONLIKA 4.0~-- vorgestellt.  Das automatisierte Abrufverfahren wurde vom Thüringer
-  Landesamt für Bodenmanagement und Geoinformation (TLBG) in Zusammenarbeit mit grit entwickelt. Das
-  Rollen- und Rechtekonzept wird durch die Authentifizierung via BundID und Keycloak abgebildet.
-  Basis ist die Open Source-Lösung Masterportal.%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 10:00
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58079-transitous-freies-public-transport-routing/
-
-%
-
+\newTimeslot{10:10}
 \noindent\abstractHSzwei{%
-  Volker Krause%
+  Sebastian Schnell%
 }{%
-  Transitous~-- Freies Public Transport\linebreak Routing%
+  ForestPulse: Geodatendienste für Deutschlands Wälder%
 }{%
 }{%
-  Während es im OSM Umfeld eine Reihe Routing-Dienste für den Individualverkehr gibt, fehlte bisher
-  ein freier und unabhängig betriebener Routing-Dienst für den öffentlichen Personenverkehr, der
-  nicht auf einen engen räumlichen Bereich begrenzt ist. Transitous schließt diese Lücke.%
+  ForestPulse entwickelt jährlich aktualisierte Informationsprodukte zu Waldfläche, Baumarten,
+  Vitalität und Struktur für die Wälder Deutschlands, die als freie Geodatenservices zur Verfügung
+  gestellt werden.  Basierend auf Fernerkundungs- und Felddaten werden zeitlich und inhaltlich
+  konsistente Informationen bereitgestellt. Durch die Verwendung eigener Trainingsdaten ist es
+  möglich vortrainierte Modelle regional anzupassen.  Im Beitrag werden die Dienste vorgestellt und
+  erste Ergebnisse gezeigt.%
 }%
 
-\pagebreak
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% time: Thursday 10:00
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58081-ermittlung-von-versiegelten-flchen-als-komplexe-aufgabe-projekt-seal-/
+% time: Thursday 10:10
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-82604-von-sensor-bis-karte-erste-schritte-mit-qgis-und-sensorthings-api/
 
 %
 
 \noindent\abstractHSdrei{%
-  Peter Lorkowski%
+  Michael Stein%
 }{%
-  Ermittlung von versiegelten Flächen als komplexe Aufgabe (Projekt SEAL)%
+  Von Sensor bis Karte: Erste Schritte mit QGIS und SensorThings API%
 }{%
 }{%
-  Die Kartierung von Flächenversiegelungen wird für immer mehr Bereiche relevant. Bei der Auswahl
-  vorzugsweise freier Daten und Software besteht eine Vielfalt von Möglichkeiten. Im Rahmen des hier
-  beschriebenen Projektes wird eine Prozesskette so organisiert, dass die einzelnen Datenquellen,
-  Prozessschritte (manuelle Datenerfassung, GIS-Analysen, KI) und (Zwischen-)Ergebnisse flexibel
-  kombinierbar sind. Das hierfür entworfene Rahmenwerk sowie erste Zwischenergebnisse werden
-  vorgestellt.%
+  Der Vortrag zeigt, wie sich Sensordaten über die OGC SensorThings API in QGIS visualisieren
+  lassen. Nach einer kurzen Einführung in das Konzept von SensorThings werden schrittweise Karten
+  erstellt~-- von der Übersicht aller Sensoren bis hin zur detaillierten Darstellung eines einzelnen
+  Datenstroms mit Jahreswerten und Diagramm. Abschließend wird gezeigt, wie aktuelle Messwerte einer
+  Sensorart auf einer Karte dargestellt werden können.%
 }%
 
-\input{sponsorentexte/203-adesso.tex}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % time: Thursday 11:10
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57855-fossgis-bei-opencode-de/
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-83665-groe-qgis-projekte-im-dauerbetrieb-erfahrungen-tools-tipps-herausforderungen/
 
 %
 \newTimeslot{11:10}
 \noindent\abstractHSeins{%
-  David Arndt, Torsten Friebe%
+  Gabi Gebhardt-Weidl%
 }{%
-  FOSSGIS bei OpenCode.de%
+  Große QGIS-Projekte im Dauerbetrieb~-- Erfahrungen, Tools, Tipps \& Herausforderungen%
 }{%
 }{%
-  IT-Sicherheit spielt eine immer größere Rolle. Dabei ist die Zertifizierung ein wichtiger
-  Schlüssel um Software in der öffentlichen Verwaltung einzusetzen. Anfang 2024 ist das Zentrum für
-  Digitale Souveränität GmbH gestartet, um Open Source in der öffentlichen Verwaltung
-  voranzutreiben.
-  Der Nutzen für die FOSSGIS Community soll in diesem Vortrag beleuchtet werden.%
+  QGIS-Projekte im Dauerbetrieb einsetzen~-- das geht. Wir berichten aus der Praxis nach acht Jahren
+  produktiver Nutzung bei den Stadtwerken München.
+  Unser zentrales QGIS Projekt hat > 1.200 Layer, tausende Nutze\textbackslash1(\textbackslash2) und wird mit QGIS \& QGIS
+  Server verwendet.
+  Der Vortrag zeigt, wie große QGIS-Projekte erfolgreich betrieben \& weiterentwickelt werden können.
+  Wir zeigen unsere Lösungen \& selbst entwickelten Tools, berichten über Herausforderungen und
+  teilen unsere Erfahrungen mit der Community.%
 }%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % time: Thursday 11:10
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57842-barrierefreies-routing-mit-motis/
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84125-kollaboratives-gis-mit-jupyter-notebooks-und-jupytergis/
 
 %
 
 \noindent\abstractHSzwei{%
-  Felix Gündling%
+  Pirmin Kalberer%
 }{%
-  Barrierefreies Routing mit MOTIS%
+  Kollaboratives GIS mit Jupyter Notebooks und JupyterGIS%
 }{%
 }{%
-  MOTIS v2 routet nicht nur die erste und letzte Meile auf OpenStreetMap Daten, sondern auch
-  Umstiegswege. Um dies effizient auch für große Gebiete zu ermöglichen und Stockwerke korrekt zu
-  behandeln, wurde ein skalierbarer, profilbasierter Router (OSR) entwickelt. Hierbei wird in der
-  Verbindungssuche die zeitliche Verfügbarkeit von Aufzügen und Einstiegshilfen am Bahnhof
-  berücksichtigt. Wege und andere Informationen werden nach Level unterteilt dargestellt.%
+  Jupyter Notebooks sind aus der wissenschaftlichen Datenauswertung nicht mehr wegzudenken. Die
+  webbasierte, interaktive Umgebung zur Erstellung von Notebook-Dokumenten wird häufig auch für
+  geografische Datenanalysen verwendet.
+  Eine neue Applikation im Jupyter-Ökosystem ist JupyterGIS, welche kollaborative Bearbeitung von
+  GIS-Daten in Echtzeit unterstützt und das Python-API von QGIS zur Kartendarstellung nutzt.%
 }%
 
-\pagebreak
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % time: Thursday 11:10
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58065-verarbeitung-offener-satellitendaten-mit-freier-software-fr-die-visuelle-anwendung/
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-83875-von-mapillary-zu-maproulette-radweglucken-automatisch-erkennen-und-erganzen/
 
 %
 
-\noindent\abstractHSdrei{%
-  Christoph Hormann%
-}{%
-  Verarbeitung offener Satellitendaten mit freier Software für die visuelle Anwendung%
-}{%
-}{%
-  Was steckt dahinter, wenn man in einem interaktiven Kartendienst im Internet die
-  Satellitenbild-Ebene betrachtet?  Dieser Vortrag gibt einen Einblick auf Grundlage von 20 Jahren
-  praktischer Erfahrung in der Produktion derartiger Darstellungen.%
-}%
-
-\newLightningTimeslot{11:10}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 11:10
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57449-10-jahre-opensensemap-neue-features-fr-die-zukunft-der-umweltdaten/
-
-%
-
-\noindent\abstractHSvier{%
-  Frederick Bruch%
-}{%
-  10 Jahre openSenseMap: Neue Features für die Zukunft der Umweltdaten%
-}{%
-}{%
-  Die {\em openSenseMap} ist eine interaktive Karte für Umweltdaten, die von Schulen, Städten und
-  Bürgern weltweit genutzt wird. Seit 2014 wurden über 14.000 Sensoren registriert und mehr als
-  10 Milliarden Messwerte in Echtzeit bereitgestellt. Die neue Version verbessert die
-  Datenvisualisierung und bietet viele weitere neue Features. In unserem Lightning-Talk stellen wir
-  diese Neuerungen vor und feiern 10 Jahre openSenseMap, die einen wichtigen Beitrag zu Forschung
-  und Bildung leistet.%
-}%
-
-\pagebreak
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 11:15
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58191-verkehrliche-manahmen-aus-historischen-osm-daten-identifizieren/
-
-%
-%\newTimeslot{11:15}
-\newLightningTimeslot{11:15}
 \noindent\abstractHSvier{%
   Simon Metzler%
 }{%
-  Verkehrliche Maßnahmen aus historischen OSM-Daten identifizieren%
+  Von Mapillary zu MapRoulette: Radweglücken automatisch erkennen und ergänzen%
 }{%
 }{%
-  Eine zentrale Datenbank zu verkehrlichen Maßnahmen fehlt in Deutschland. Dieses Projekt entwickelt
-  einen Prozess, der mithilfe von OSM-Daten und ohsome versucht verkehrliche Maßnahmen räumlich und
-  zeitlich zu identifizieren. Anhand von Prototypen und Szenarien für Benchmarking soll die Methode
-  getestet werden. Die Herausforderungen bestehen insbesondere in der Differenzierung echter
-  Maßnahmen von anderen Änderungen und der Komplexität bei Geometrieanpassungen.%
+  In diesem Lightning-Talk wird gezeigt, wie automatisch erkannte Verkehrszeichen aus Mapillary
+  genutzt werden, um Lücken im Radwegenetz in OpenStreetMap zu finden und in einer
+  MapRoulette-Challenge gezielt zu bearbeiten. Die Kampagne hat bereits über 200 km bisher nicht
+  erfasste Radinfrastruktur in Deutschland ergänzt und lässt sich auch auf weitere Themen wie Tempo
+  30 oder Zebrastreifen übertragen.%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 11:10
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84270-osgeo-deegree-anwendertreffen/
+
+%
+
+\noindent\abstractOther{%
+  Torsten Friebe, Stephan Reichhelm, Dirk Stenger%
+}{%
+  OSGeo deegree~-- Anwendertreffen%
+}{%
+}{%
+  Zum Anwendertreffen sind Anwender:innen und Entwickler:innen herzlich eingeladen, die
+  Netzwerkdienste wie WMS, WFS oder OGC API~-- Features mit dem OSGeo-Projekt deegree umsetzen oder
+  dieses für die Zukunft planen. Wie jedes Jahr wird es als Einstieg einen kurzen Überblick über die
+  aktuellen Änderungen im Projekt geben.%
+}%
+{%
+  BoF1 (ZHG 001)%
+}%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 11:10
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84290-neues-von-der-gbd-websuite/
+
+%
+
+\noindent\abstractOther{%
+  Otto Dassau%
+}{%
+  Neues von der GBD WebSuite%
+}{%
+}{%
+  Im Oktober 2025 wurde die Version 8.2 der GBD WebSuite (https://gbd-websuite.de) veröffentlicht.
+  Sie bringt Verbesserungen beim Support von Rasterdaten, OGC Diensten und Interoperabilität, bei
+  der ALKIS Suche sowie dem Drucken von Karten mit. Zudem wurden zahlreiche Optimierungen für die
+  Administration und das Backend realisiert sowie umfangreiche Vorbereitungen für Innovationen in
+  zukünftigen Versionen getroffen. Dieses und noch mehr möchten wir euch vorstellen und gemeinsam
+  diskutieren.%
+}%
+{%
+  BoF2 (ZHG 005)%
+}%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 11:10
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-83203-automatische-daten-und-stilgesteuerte-kartenoptimierung/
+
+%
+
+\noindent\abstractAnwBoFdrei{%
+  Frank Elsinga%
+}{%
+  Automatische daten- und stilgesteuerte Kartenoptimierung%
+}{%
+}{%
+  Der Vortrag zeigt, wie sich Kartenstile und zugrunde liegende Daten automatisch optimieren lassen,
+  um Performance und Ressourcennutzung zu verbessern. Anhand praktischer Beispiele wird erläutert,
+  wie daten- und stilgesteuerte Ansätze Ladezeiten verkürzen, Tile-Größen reduzieren und das
+  Rendering effizienter machen.
+  Takeaways
+  - Welche Ansätze zur Optimierung von Kartenstilen/-daten existieren?
+  - Warum diese Optimierungen die Performance einer Karte deutlich verbessern können%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 11:15
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-82557-neue-werkzeuge-furs-3d-mapping/
+
+%
+\newTimeslot{11:15}
+\noindent\abstractHSvier{%
+  Tobias Knerr%
+}{%
+  Neue Werkzeuge fürs 3D-Mapping%
+}{%
+}{%
+  Die dreidimensionale Erfassung von Gebäuden und anderen Objekten in OpenStreetMap ist eine der
+  komplexeren Aufgaben für Mapper. Neue Werkzeuge machen das 3D-Mapping zugänglicher und
+  effizienter.%
 }%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % time: Thursday 11:20
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57632-openstreetmap-featureinfo/
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-83575-uber-1000-apps-in-5-minuten-der-osm-apps-catalog/
 
 %
-%\newTimeslot{11:20}
-\newLightningTimeslot{11:20}
+\newTimeslot{11:20}
 \noindent\abstractHSvier{%
-  Jakob Miksch%
+  Christopher Lorenz%
 }{%
-  OpenStreetMap FeatureInfo%
-}{%
-}{%
-  Der Vortrag stellt eine Implementierung vor, die es erlaubt Informationen zu OSM Objekten um einen
-  Ort herum über eine einfache Schnittstelle abzufragen. Die Idee dahinter ist, das Rad nicht neu zu
-  erfinden, sondern bewährte Software-Komponenten zu kombinieren und auf etablierte Standards zu
-  setzen.%
-}%
-
-\pagebreak
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 11:25
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58204-pnktlich-zur-uni-bus-tracking-mit-der-efa-json-api/
-
-%
-%\newTimeslot{11:25}
-\newLightningTimeslot{11:25}
-\noindent\abstractHSvier{%
-  Christoph Friedrich%
-}{%
-  Pünktlich zur Uni? Bus-Tracking mit der EFA JSON API%
+  Über 1000 Apps in 5 Minuten~-- Der OSM Apps Catalog%
 }{%
 }{%
-  Im "`Bahnland Bayern"' sind Echtzeit-Mobilitätsdaten über eine Schnittstelle namens "`EFA JSON API"
-  verfügbar. Indem man diese mitschneidet, kann eine Pünktlichkeitsstatistik z.B. der Würzburger
-  Stadtbusse erstellt werden, die aufgrund der nachwievor fehlenden Straßenbahnanbindung der Uni
-  gerade zum morgendlichen Vorlesungsbeginn nicht prickelnd aussieht.%
+  Wer kennt es nicht: Da gab es doch diese eine Webanwendung mit der man einfach Informationen zu
+  OpenStreetMap zu spezifischen Themen hinzufügen kann. Im OSM Apps Catalog findet man viel wenn
+  nicht sogar alle öffentliche Apps, Webseiten und Karten rund um OpenStreetMap.%
 }%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% time: Thursday 11:10
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58048-anwendertreffen-lizmap-webclient/
+% time: Thursday 11:30
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84317-winding-paths-on-deep-maps/
 
 %
-\newSmallTimeslot{11:10}
-\noindent\abstractAnwBoFeins{%
-  Günter Wagner%
-}{%
-  Anwendertreffen Lizmap-Webclient%
-}{%
-}{%
-  Die deutschsprachige Anwendergruppe für den WebClient Lizmap möchte das Treffen zum
-  Erfahrungsaustausch nutzen.
-  Teilnehmer können ihre eigenen, mit QGIS-Server und Lizmap realisierten WebGIS-Projekte
-  vorstellen. Ferner kann über aktuelle Fragen/Probleme und zukünftige, gewünschte Erweiterungen in
-  Lizmap diskutiert werden.
-  Das Anwendertreffen richtet sich sowohl an neu Interessierte, als auch an Anwender, die bereits
-  mit Lizmap arbeiten.%
-}%
-
-\pagebreak
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 11:10
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58141-gbd-websuite-anwendertreffen/
-
-%
-
-\noindent\abstractAnwBoFzwei{%
-  Otto Dassau%
-}{%
-  GBD WebSuite Anwendertreffen%
-}{%
-}{%
-  Die GBD WebSuite ist eine flexible und leistungsstarke Open Source WebGIS Plattform zur
-  Geodatenverarbeitung (https://gbd-websuite.de). Sie wird seit 2017 entwickelt und deutschlandweit
-  von Kommunen und privaten Unternehmen genutzt. Wir möchten die FOSSGIS für den Austausch zwischen
-  Anwendern nutzen und Interessierten das Open Source Projekt vorstellen.%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 11:10
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58292-herausforderungen-bei-der-beschriftungs-steuerung-im-qgis/
-
-%
-
+\newTimeslot{11:30}
 \noindent\abstractAnwBoFdrei{%
-  Claas Leiner%
+  Anastasia Bauch%
 }{%
-  Herausforderungen bei der Beschriftungs-Steuerung im QGIS%
+  Winding Paths on Deep Maps%
 }{%
 }{%
-  Die Möglichkeiten zur  Beschriftungssteuerung im QGIS sind ebenso beeindruckend wie
-  herausfordernd. In der Fragestunde können Probleme der Platzierung, der Größensteuerung  sowie
-  Einpassung in Polygonen uns vieles andere Thema sein. Wobei ich natürlich nicht alles weis und
-  mich freue, wenn Leute mit den unterschiedlichsten Erfahrungsständen zur Fragestunde kommen, um so
-  einen spannenden Erfahrungsaustausch zu ermöglichen%
+  Deep Maps sollen ein Gegenentwurf zu als "`autoritär"' kritisierten thematischen Karten mit einem
+  Einzelautor sein. Stattdessen können in Deep Maps verschiedene Perspektiven dargestellt werden, um
+  diese Multiperspektivität zu Navigieren präsentiert das vorgestellte Projekt einen Ansatz eigene
+  Pfade über diese Karten zu generieren und so Interaktion mit dem eigenen Pfad räumlich nahen
+  Perspektiven anzuregen.%
 }%
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % time: Thursday 11:45
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58037-xplanung-mit-open-source-software/
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-83063-einfuhrung-von-qgis-als-standard-desktop-gis-arbeitsplatz-der-bayerischen-umweltverwa/
 
 %
 \newTimeslot{11:45}
 \noindent\abstractHSeins{%
-  Torsten Friebe%
+  Carolin von Groote-Bidlingmaier, Christian Strobl%
 }{%
-  XPlanung mit Open Source Software%
+  Einführung von QGIS als Standard-Desktop-GIS-Arbeitsplatz der Bayerischen Umweltverwa%
 }{%
 }{%
-  Im April 2022 wurde der Quellcode der Software xPlanBox der Firma lat/lon im Rahmen eines
-  Pilotprojekts auf der OpenCoDE-Plattform des BMI veröffentlicht. Seitdem wird die Software
-  kontinuierlich weiterentwickelt und kommt im Rahmen des Onlinezugangsgesetz (OZG) und des
-  "`Einer-für-Alle"-Prinzips (EfA) zum Einsatz. Der Vortrag stellt kurz die wichtigsten Neuerungen
-  der Version 8.0 und den erweiterten Möglichenkeiten für den Betrieb auf der Kubernetes-Plattform
-  vor.%
+  Geographische Informationssysteme (GIS) bilden eine wichtige Arbeitsgrundlage für die
+  Geodatenverarbeitung der Bayerischen Umweltverwaltung. Die bisher im Einsatz befindlichen GIS
+  sollen in weiten Bereichen durch QGIS abgelöst werden. Für die Inbetriebnahme sind einige Aspekte
+  hinsichtlich IT-Sicherheit, Performance, Interoperabilität und Betrieb geklärt worden. Diese
+  sollen im Rahmen des Vortrags näher vorgestellt werden, um anderen Institutionen einen
+  vergleichbaren Prozess zu erleichtern.%
 }%
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % time: Thursday 11:45
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58295-online-karten-fr-die-verkehrswende-mit-opendata-und-foss/
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84119-diskrete-globale-gittersysteme-fur-die-raum-zeitliche-aggregation-und-visualisierung/
 
 %
 
 \noindent\abstractHSzwei{%
-  Johanna Klitzschmüller%
+  Michael Scholz%
 }{%
-  Online-Karten für die Verkehrswende mit OpenData und FOSS%
+  Diskrete globale Gittersysteme für die raum-zeitliche Aggregation und Visualisierung%
 }{%
 }{%
-  Mit OpenData und freier/open-source Software lässt sich eine Online-Kartenanwendung bauen, mit der
-  sich die Straßenraumaufteilung der Stadt Kiel darstellen und untersuchen lässt. Damit kann diese
-  Online-Karte ein weiteres Werkzeug im Kampf für eine Verkehrswende sein.%
+  Die raum-zeitliche Aggregation großer (Punkt-)Datenmengen für die kartografische
+  Web-Visualisierung stellt eine Herausforderung dar, die auf unterschiedliche Weisen angegangen
+  werden kann. Anhand zweier Praxisbeispiele~-- auf Datenbankebene in PostgreSQL und im
+  Streamprozessor-Framework Apache Flink~-- wird die Verwendung von Ubers H3-Programmbibliothek für
+  die hexagonale Aggregation in einem Discrete Global Grid System (DGGS) vorgestellt und diskutiert.%
 }%
 
-\pagebreak
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % time: Thursday 11:45
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57656-digitaler-zwilling-niedersachsen-auf-basis-der-unreal-engine-und-lgln-open-data/
-
-%
-
-\noindent\abstractHSvier{%
-  Julian Müller, Vincent-Aleister Raveling%
-}{%
-  Digitaler Zwilling Niedersachsen auf Basis der Unreal Engine und LGLN Open Data%
-}{%
-}{%
-  Dieses Projekt aus dem Bereich "`digitaler Zwilling"' erkundet die Verbindbarkeit von offenen
-  Geodaten des LGLNs mit der Unreal Engine 5 um moderne Echtzeitanalysen zu entwickeln. Als
-  Szenegrundlage dient das Geländemodell mit digitalen Orthophotos zur Texturierung und LOD 1 und 2
-  Gebäudemodellen. Auch 3D-Meshes und Punktwolken können geladen werden. Alle Daten werden aus der
-  Cloud bezogen, was die Dateigröße der Anwendung an sich gering hält.%
-}%
-
-\vspace{1.5cm}
-\input{sponsorentexte/410-komoot.tex}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 12:20
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57514-modellgetriebene-xplanung-von-uml-zur-ogc-api-for-features/
-
-%
-\newTimeslot{12:20}
-\noindent\abstractHSeins{%
-  Tobias Kraft%
-}{%
-  Modellgetriebene XPlanung: von UML zur OGC API for Features%
-}{%
-}{%
-  Basierend auf einem modellgetriebenen Ansatz können komplexe XPlanungsdaten mit dem Python-Projekt
-  XPlan-Tools verarbeitet und manipuliert werden. So können sie u.a. in eine PostGIS-Datenbank
-  überführt und mit ldproxy ohne Weiteres per OGC API for Features veröffentlicht werden. Darüber
-  hinaus sind eine Versionsmigration (XPlanung v5 auf v6) sowie die Transformation der
-  XPlanungsdaten nach INSPIRE PLU implementiert.%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 12:20
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58228-erreichbarkeitsanalyse-in-lndlichen-rumen-potenziale-des-radverkehrs/
-
-%
-
-\noindent\abstractHSzwei{%
-  Simon Metzler, Caroline Huth%
-}{%
-  Erreichbarkeitsanalyse in ländlichen\linebreak Räumen: Potenziale des Radverkehrs%
-}{%
-}{%
-  Der Beitrag untersucht die Erreichbarkeit von Versorgungszielen in ländlichen Räumen per Rad. Mit
-  einer offenen Methode werden Isochronen für Startpunkte berechnet um deren Erreichbarkeit zu
-  Attraktionspunkten zu bewerten. Die Verfahrenspipeline, entwickelt in Python, ermöglicht eine
-  reproduzierbare Analyse und Vergleichbarkeit zwischen Routingprofilen. Die Methode wurde
-  exemplarisch in Kall getestet und soll nun um zusätzliche Routingprofile, Attraktionspunkte und
-  Gebiete erweitert werden.%
-}%
-
-\pagebreak
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 12:20
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58254-klimaanpassungsrelevante-vegetationsindikatoren-mit-hilfe-von-sentinel-2-zeitreihen/
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84320-open-source-dashboard-zur-visualisierung-von-gemeinschaftlich-erfassten-gebaude-daten/
 
 %
 
 \noindent\abstractHSdrei{%
-  Benjamin Stöckigt%
+  Theodor Rieche%
 }{%
-  Klimaanpassungsrelevante Vegetationsindikatoren mit Hilfe von Sentinel-2 Zeitreihen%
-}{%
-}{%
-  Im Vortrag wird die Methodik zur Herleitung von Vegetationsindikatoren wie Grünvolumen und
-  Beschirmungsgrad auf Grundlage von Satellitendaten vorgestellt. Außerdem werden weiterführende
-  Analysen für klimaanpassungsrelevante Fragestellungen präsentiert. Die Indikatoren werden jährlich
-  aktuell bereitgestellt und ermöglichen aufbauende Analysen auch außerhalb des urbanen Kontexts.
-  Methodik und Daten stehen unter CC BY-NC und GPL-V.3 zur Verfügung.%
-}%
-
-\vspace{1.5cm}
-\input{sponsorentexte/411-latlon.tex}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 14:15
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57887-kinder-karten-open-source/
-
-%
-\newTimeslot{14:15}
-\enlargethispage{3.0\baselineskip}
-\noindent\abstractHSeins{%
- Roland Olbricht%
-}{%
-  Kinder, Karten, Open Source%
+  Open Source Dashboard zur Visualisierung von gemeinschaftlich erfassten Gebäude-Daten%
 }{%
 }{%
-  Wie begeistern wir die nächste Generation für Open Source und OpenStreetMap?
-  Der Vortrag soll eine Bestandsaufnahme bieten, was es an Bildungs- und Begeisterungsmaterial und
-  -konzepten für verschiedene Altersgruppen unter 18 zum Raum Erfahren schon gibt. Es ist Zeit zu
-  überlegen, welche Angebote wir machen können und wollen, um daran mit Open Source und
-  OpenStreetMap anzuknüpfen.%
+  Der Vortrag stellt die Entwicklung eines interaktiven Grafana-Dashboards vor, um die
+  raum-zeitlichen Erfassungsaktivitäten von Gebäudemerkmalen (wie Nutzung, Alter oder Baumaterial)
+  des Citizen Science Projektes "`Colouring Dresden"' erlebbar zu machen. So soll die Sichtbarkeit für
+  das Projekt erhöht werden, und auch Motivation für neue Erfassungen gegeben werden. Der Vortrag
+  geht auf die Erfahrungen aus dem Projekt ein und stellt die verwendeten technischen Komponenten
+  und deren Entwicklung vor.%
 }%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% time: Thursday 14:15
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57539-fahrzeugortung-db-regio-mehr-als-gps/
-
-%
-
-\noindent\abstractHSzwei{%
-  Stefan Kowski%
-}{%
-  Fahrzeugortung DB Regio~-- mehr als GPS%
-}{%
-}{%
-  Der Praxisvortrag gibt einen Einblick in die Fahrzeugortung von DB Regio und zeigt, welche Open
-  Source-Software in verschiedenen Anwendungsbereichen zum Einsatz kommt.%
-}%
-
-%\pagebreak
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 14:15
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58119-landesweite-datenerfassungen-organisieren-und-effizient-gestalten-mit-qgis/
-
-%
-
-\noindent\abstractHSdrei{%
-  Gordon Schlolaut, Ingo Pfisterer%
-}{%
-  Landesweite Datenerfassungen organisieren und effizient gestalten mit QGIS%
-}{%
-}{%
-  Es wird die Entwicklung eines komplexen QGIS-Plugin vorgestellt, das den Prozess
-  einer landesweiten Datenerhebung, mit einer Vielzahl an Einzelaufträgen, vereinfacht und
-  standardisiert. In der Vergangenheit erforderten diese einzelnen Datenerfassungsaufträge eine
-  umfangreiche manuelle Vorbereitung, Datenvalidierung und Integration in einen zentralen
-  Datenbestand. Am Beispiel der Hessischen Lebensraum- und Biotopkartierung demonstrieren wir das
-  Potential maßgeschneiderter Plugins.%
-}%
-
-\newpage
-\enlargethispage{4.0\baselineskip}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 14:15
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58053-qfield-plugins-beispiele-und-mglichkeiten/
-
-%
-\newLightningTimeslot{14:15}
-\noindent\abstractHSvier{%
-  Michael Schmuki%
-}{%
-  QField Plugins~-- Beispiele und Möglich\-keiten%
-}{%
-}{%
-  In diesem Lightning Talk tauchen wir in die faszinierende Welt der QField-Plugins ein und
-  entdecken ihre vielfältigen Anwendungsmöglichkeiten. Es wird eine Auswahl an praktischen
-  Beispielen vorgestellt und aufgezeigt, wie diese Plugins installiert und genutzt werden können.
-  Lassen Sie sich inspirieren und erfahren Sie, wie Sie QField noch effektiver in Ihren Projekten
-  einsetzen können.%
-}%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 14:20
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58296-qgis-fernsteuern-kickstart-mit-pyqgis-zur-automatisierung/
-
-%
-\newLightningTimeslot{14:20}
-\noindent\abstractHSvier{%
- Helge Staedtler%
-}{%
-  QGIS fernsteuern: Kickstart mit PyQGIS zur Automatisierung%
-}{%
-}{%
-  QGIS ist ein mächtiges Werkzeug, aber auch ein komplexes Werkzeug. Man muss oft eine ganze Menge
-  Einstellungen vornehmen, um zu einem gewünschten Ergebnis zu kommen. Will man das Ergebnis nicht
-  nur einmal erzielen, darf man nicht in der Zwischenzeit vergessen, wie das nochmal genau ging. Es
-  kann einfacher sein mit dem Python Modul {\bfseries PyQGIS} wiederkehrende Operationen zu automatisieren.%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 14:25
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57634-qgis-server-per-rest-api-konfigurieren/
-
-%
-\newLightningTimeslot{14:25}
-\noindent\abstractHSvier{%
-  Jakob Miksch%
-}{%
-  QGIS Server per REST API konfigurieren%
-}{%
-}{%
-  Das Projekt QSA (QGIS Server Administrator) ermöglicht es QGIS Projekte über eine
-  REST-Schnittstelle zu konfigurieren.%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 14:15
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57450-opensensemap-anwendertreffen/
-
-%
-\newTimeslot{14:15}
-\noindent\abstractAnwBoFeins{%
-  Frederick Bruch%
-}{%
-  openSenseMap Anwendertreffen%
-}{%
-}{%
-  Die openSenseMap ist eine frei nutzbare interaktive Karte für Umweltdaten, die von Schulen,
-  Forschungseinrichtungen und Bürger
-  weltweit verwendet wird. Beim ersten Anwendertreffen wird die neueste Version der Plattform
-  vorgestellt, inklusive neuer Features zur besseren Visualisierung und Analyse von Daten.
-  Teilnehmer:innen
-  können sich austauschen, Feedback geben und Ideen zur Weiterentwicklung der Plattform diskutieren.
-  Alle Interessierten sind herzlich willkommen!%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 14:15
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57535-qwc2-anwendertreffen/
-
-%
-
-\noindent\abstractAnwBoFzwei{%
-  Daniel Cebulla%
-}{%
-  QWC2 Anwendertreffen%
-}{%
-}{%
-  Der QWC2 (QGIS Web Client 2) ist die offizielle WebGIS-Anwendung des QGIS Projektes. Das Treffen
-  soll QWC2-Anwendern und -Ad\-mi\-ni\-strato\-ren die Möglichkeit geben, eigene Erfahrungen mit anderen
-  Anwendern zu teilen und neue Kontakte zu knüpfen. Teilnehmer können ihre eigenen, mit QWC2
-  realisierten WebGIS-Projekte vorstellen und gemeinsam evtl. auftretende Probleme diskutieren oder
-  anderen Tipps geben.
-  Alle Interessenten sind herzlich eingeladen, beim Anwendertreffen vorbeizuschauen!%
-}%
-
-\pagebreak
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 14:15
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58236-karten-bausteine-eines-digital-zugnglichen-staates-/
-
-%
-
-\noindent\abstractAnwBoFdrei{%
-  Mathias Großklaus, Robin Pfaff%
-}{%
-  Karten~-- Bausteine eines digital zugänglichen Staates?%
-}{%
-}{%
-  Die öffentliche Verwaltung bieten ihren Bürger:innen eine Vielzahl kartenbasierter Angebote an.
-  Diese sind sinnvoll~-- oft jedoch nicht intuitiv zu bedienen, auf Nischenthemen beschränkt,
-  uneinheitlich designed und schwer auffindbar. Hier wird demokratisches Potenzial verschenkt:
-  Nutzendenfreundlichere Karten könnten ein wichtiger Bestandteil eines digital zugänglichen Staates
-  sein. Im Workshop wollen wir gemeinsam diskutieren, wie wir das zusammen mit der OSM-Community
-  erreichen können.%
-}%
-
-\vspace{1.5cm}
-\input{sponsorentexte/412-tomtom.tex}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 14:50
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58025-openstreetmap-ist-doch-vollstndig-/
-
-%
-\newTimeslot{14:50}
-\noindent\abstractHSeins{%
-  Michael Reichert%
-}{%
-  OpenStreetMap ist doch vollständig …%
-}{%
-}{%
-  OpenStreetMap ist letztes Jahr 20 Jahre zwar alt geworden. Dennoch ist die Datensammlung weder
-  vollständig noch fertig. Der Erfassungsgrad in den einzelnen Themenfeldern ist regional äußerst
-  unterschiedlich. Der Vortrag zeigt auf, wie man Gegenden und Themen findet, in denen OpenStreetMap
-  noch Aufholbedarf hat. Zielgruppe des Vortrags sind Mapper, die vor Ort Daten erheben möchten. Die
-  gezeigten Methoden eignen sich auch, um spannende Reiseziele zu finden.%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 14:50
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58239-dfs-deutsche-flugsicherung-open-source-und-sicherheit-bei-uas-ein-erfahrungsbericht/
-
-%
-
-\noindent\abstractHSzwei{%
-  Vera Werner%
-}{%
-  DFS Deutsche Flugsicherung: Open Source und Sicherheit bei UAS? Ein Erfahrungs\-bericht%
-}{%
-}{%s
-  Unmanned Aircraft Systems (UAS) etablieren sich als neue Verkehrsteilnehmer im Luftraum. Die DFS
-  unterstützt deren sichere Integration durch die Bereitstellung relevanter Geodaten und setzt dabei
-  auf freie Open Source Software (FOSS) im Geodatenmanagement. Fünf Jahre nach Gründung des
-  Geo\-daten\-manage\-ment-Teams bieten wir Einblicke in Herausforderungen bei der Datenbereitstellung,
-  die Akzeptanz und den Mehrwert von FOSS sowie die Entwicklung der gesetzlichen Rahmenbedingungen.%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 14:50
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58217-qgis-im-glasfaser-ausbau-der-deutschen-telekom/
-
-%
-
-\noindent\abstractHSdrei{%
-  Felix von Studsinske, Torsten Drey%
-}{%
-  QGIS im Glasfaser-Ausbau der Deutschen Telekom%
-}{%
-}{%
-  Der Anschluss von Haushalten mit Glasfaser durch die Deutsche Telekom ist zu einem hohen Grad
-  automatisiert und wird massiv durch den Einsatz von Geodaten und freier Software gestützt. Ein
-  wichtiger Schritt im Planungsprozess ist die sog. Detailplanung für ein Ausbaugebiet bei der
-  mittels QGIS und dem entwickelten Plugin "`Plan[Goo]” der Trassenverlauf, die Kosten und der
-  benötigte Materialeinsatz bestimmt werden. Der Vortrag gibt einen Überblick über den gesamten
-  Prozess und Plan[Goo].%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 14:50
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58290-zaubern-mit-dem-geopackage/
-
-%
-
-\noindent\abstractHSvier{%
-  Claas Leiner%
-}{%
-  Zaubern mit dem Geopackage%
-}{%
-}{%
-  Das Geopackage kann nicht nur Daten verpacken sondern ganz schnell im Hintergrund  Arbeit
-  verrichten, die  anschließend im QGIS wie Zauberei sichtbar wird.  Die Verschneidung zweier Layer
-  aktualisiert sich, wenn die Quell-Layer geändert werden, ohne das ein weiterer Prozess aufgerufen
-  werden muss. Aggregierungen und Auswertungen sind stets auf dem Stand.
-  Schließlich ist das Geopackage eine SQLite-Datenbank, in welcher der SQL-Zauberstab zum effektiven
-  GIS-Helferlein wird.%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 15:25
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58235-overpass-turbo-goes-postgis/
-
-%
-\newTimeslot{15:25}
-\noindent\abstractHSeins{%
-  Frederik Ramm%
-}{%
-  Overpass Turbo goes PostGIS%
-}{%
-}{%
-  Der Vortrag stellt einen Dienst vor, der es erlaubt, das weit verbreitete "`Overpass
-  Turbo"-Webfrontend mit einer PostGIS-Datenbank anstelle einer Overpass-Datenbank zu verwenden und
-  stellt einige Feature- und Performance-Vergleiche an.%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 15:25
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57031-geodatenmanagement-in-einer-baubehrde-wna-nord-ostsee-kanal-/
-
-%
-
-\noindent\abstractHSzwei{%
-  Niny Zamora%
-}{%
-  Geodatenmanagement in einer\linebreak Baubehörde (WNA Nord Ostsee Kanal)%
-}{%
-}{%
-  Bauprojekte binden große Mengen an finanziellen, zeitlichen und personellen Ressourcen.
-  Geodatenmanagement kann dabei helfen, diese effizient zu verwalten. Im fachlichen Kontext einer
-  Baubehörde ist das Bewusstsein dafür nicht an allen Stellen gleich stark ausgeprägt, da es oft an
-  GIS-Kenntnissen fehlt. Dieses Potenzial auszuschöpfen, ist eine Herausforderung. In diesem
-  Vortrag, sollen die QGIS-Erweiterungen "`Baufeldverwaltung"' und "`Kampfmittelverwaltung"' vorgestellt
-  werden.%
-}%
-
-\pagebreak
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 15:25
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58221-web-trifft-desktop/
-
-%
-
-\noindent\abstractHSdrei{%
-  Matthias Kuhn%
-}{%
-  Web trifft Desktop%
-}{%
-}{%
-  Mit realen Anwendungsfällen in QGIS und QField zeigen wir, wie das Django-Framework konsumierbare
-  Geodatenebenen als OGC API~-- Features-Endpunkte erzeugen kann. Indem sowohl das Datenmodell als
-  auch die Geschäftslogik in Python mit dem Django-ORM definiert werden, lassen sich
-  Herausforderungen umgehen, die häufig bei herkömmlichen Datenbankansätzen auftreten. Auf diese
-  Weise demonstrieren wir, wie die Nutzung von Django zu interessanten Perspektiven für solche
-  Anwendungen führen kann.%
-}%
-
-\vspace{1.5cm}
-\input{sponsorentexte/413-work-smarter.tex}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 16:45
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57945-automatische-veredelung-von-offenen-nahe-echtzeit-daten/
-
-%
-\newTimeslot{16:45}
-\noindent\abstractHSeins{%
-  Stephan Holl, Christian Autermann,\linebreak Benedikt Gräler%
-}{%
-  Automatische Veredelung von offenen Nahe-Echtzeit-Daten%
-}{%
-}{%
-  Vorgestellt wird eine Plattform zur Echtzeit-Verarbeitung von Erdbeobachtungs- und Wetterdaten,
-  die in der Bewältigung von Extremereignissen unterstützt. Open-Data-Quellen wie EFAS, GLOFAS und
-  DWD-Radardaten werden automatisiert auf einer skalierbaren Kubernetes-Plattform verarbeitet und
-  z.B. den Versicherungsunternehmen nahezu in Echtzeit zur Verfügung gestellt. Der Vortrag erklärt
-  das Plattformkonzept und den Mehrwert für verschiedene Branchen.%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 16:45
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57307-qfield-neue-strategie-und-anwendungspotentiale/
-
-%
-
-\noindent\abstractHSzwei{%
-  Berit Mohr%
-}{%
-  QField: Neue Strategie und\linebreak Anwendungspotentiale%
-}{%
-}{%
-  Mit über 1 Million Downloads und 350.000 aktiven Benutzern wird QField als digitales öffentliches
-  Gut anerkannt, dass die UN-Ziele für nachhaltige Entwicklung unterstützt.
-  Anwendungsfälle aus der Praxis zeigen, wie FeldarbeiterInnen aus aller Welt, Ihre Datenlücken
-  schließen, um qualifizierte und bewusste Entscheidungen zu treffen für das Wohl unserer
-  Lebensgrundlagen und für eine nachhaltige Zukunft%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 16:45
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-56980-wie-knnen-openstreetmap-und-qgis-einen-wegewart-untersttzen-/
-
-%
-
-\noindent\abstractHSdrei{%
-  Harald Hartmann%
-}{%
-  Wie können OpenStreetMap und QGIS einen Wegewart unterstützen?%
-}{%
-}{%
-  OpenStreetMap und QGIS unterstützen Wegewarte bei der Pflege von Wegen durch präzise Kartierung,
-  Visualisierung und Analyse. OSM ermöglicht das Erfassen und Aktualisieren von Wegen sowie das
-  Hinzufügen von Wegedetails und touristischem Inventar entlang des Weges. Mit QGIS lassen sich
-  diese Daten analysieren und mit weiteren GIS Daten verknüpfen. Weitere Tools erleichtern zudem den
-  mobilen Einsatz und fördern die Zusammenarbeit durch Datenaustausch und Crowdsourcing.%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 16:45
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58132-leerstandsmelder-a-thousand-channels-countermappings-aus-der-zivilgesellschaft/
-
-%
-
-\noindent\abstractHSvier{%
-  Sebastian Fuchs, Ulf Treger%
-}{%
-  Leerstandsmelder \& A Thousand Channels~-- Countermappings aus der Zivilgesellschaft%
-}{%
-}{%
-  Leerstandsmelder und A Thousand Channels sind zwei unkommerzielle, zivilgesellschaftliche
-  Plattformen, die Openstreetmap und freie Software nutzen. Zwei Projekt-Beteiligte stellen die
-  Entwicklung ihrer Plattformen vor, berichten von der Praxis mit OSM und FLOSS Software und von den
-  jeweils spezifischen Ansätzen und Fragestellungen, die beim Visualisieren von Inhalten und
-  Geoinformationen aufkommen.%
-}%
-
-\newpage
-\enlargethispage{2.0\baselineskip}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 16:45
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58044-open-transport-meetup/
-
-%
-
-\noindent\abstractAnwBoFeins{%
-  Volker Krause, Felix Gündling%
-}{%
-  Open Transport Meetup%
-}{%
-}{%
-  Ein Treffen für alle die mit Mapping, Daten oder Softwareentwicklung rund um Mobilität und
-  öffentlichen Personenverkehr zu tun haben.%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 16:45
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58118-postnas-suite-anwendertreffen/
-
-%
-
-\noindent\abstractAnwBoFzwei{%
-  Astrid Emde%
-}{%
-  PostNAS-Suite Anwendertreffen%
-}{%
-}{%
-  Die PostNAS-Suite Anwender:innen kommunizieren über die Mailingliste und treffen sich zum
-  Austausch. Das nächste Treffen soll auf der FOSSGIS 2025 stattfinden. Hier sollen aktuelle
-  Entwicklungen im PostNAS-Suite Projekt vorgestellt und die Erfahrungen der Anwender:innen
-  ausgetauscht werden.%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 16:45
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57951-herausforderungen-bei-der-ausschreibung-von-fossgis/
-
-%
-
-\noindent\abstractAnwBoFdrei{%
-  David Arndt, Torsten Wiebke, Claus Wickinghoff, Marco Junk (DVNW), Alexandros Bouras (ZenDIS)%
-}{%
-  Herausforderungen bei der Ausschreibung von FOSSGIS%
-}{%
-}{%
-  Seit Juni 2021 beschäftigt sich die Arbeitsgruppe \glqq Öffentliche Ausschreibungen mit FOSS\grqq\  des
-  FOSSGIS~e.V. mit dem Thema der
-  Beschaffung und Vergabe von IT-Lösungen auf Basis von FOSS.
-  Wir wollen mit euch und Vertreter:innen aus Verwaltungen sowie verschiedenen Bereichen der
-  digitalen Community Fragen zu Herausforderungen und Lösungsmöglichkeiten bei der Ausschreibung und
-  dem Projektmanagement zur Entwicklung von FOSS diskutieren.%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 17:20
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-56913-amtliche-satellitenpositionierung-2-0/
-
-%
-\newTimeslot{17:20}
-\enlargethispage{2.0\baselineskip}
-\noindent\abstractHSeins{%
-  Andreas Gerschwitz%
-}{%
-  Amtliche Satellitenpositionierung 2.0%
-}{%
-}{%
-  Der neue Satellitenpositionierungsdienst des Bundes und der Länder ermöglicht die Positionierung
-  mit einer Genauigkeit weniger Zentimeter als niederschwelliges Infrastrukturangebot für jeden als
-  open data in Echtzeit.%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 17:20
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58026-smash-stand-der-technik-der-digitalen-feldkartierungs-app/
-
-%
-
-\noindent\abstractHSzwei{%
-  Antonello Andrea%
-}{%
-  SMASH, Stand der Technik der digitalen Feldkartierungs-app%
-}{%
-}{%
-  Diese Präsentation gibt einen Einblick in den Stand der Technik des SMASH-Ökosystems und seine
-  aktuelle Roadmap. SMASH, die "`Smart Mobile App for Surveyor’s Happiness"', ist eine schnelle App
-  für die digitale Feldkartierung.%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 17:20
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58096-parkraumdaten-aus-osm-mit-der-verwaltung-pflegen-praxisbericht-/
-
-%
-
-\noindent\abstractHSdrei{%
-  Tobias Jordans, Alex Seidel%
-}{%
-  Parkraumdaten aus OSM mit der\linebreak Verwaltung pflegen (Praxisbericht)%
-}{%
-}{%
-  Seit zwei Jahren kooperiert die Berliner OSM-Community mit dem Bezirksamt
-  Friedrichshain-Kreuzberg, um hochwertige Daten zum Parkraum bereitzustellen. Dieser neuartige
-  Ansatz zeigt Potenziale auf, wie Herausforderungen in der Nutzung von OSM-Daten für amtliche
-  Zwecke. Nach der initialen Datenerhebung geht es darum, Prozesse zu etablieren, um die Daten
-  aktuell zu halten. In diesem Praxisbericht berichten wir über unsere Erfahrungen in der
-  Kooperation sowie bei der gemeinsamen Datenpflege.%
-}%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% time: Thursday 17:20
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57917-wie-mache-ich-eine-gute-karte-mit-qgis-/
+% time: Thursday 11:45
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-83981-aufbau-und-aktualisierung-einer-osm-basierten-karten-mit-osm2pgsql/
 
 %
 
 \noindent\abstractHSvier{%
   Mathias Gröbe%
 }{%
-  Wie mache ich eine gute Karte mit QGIS?%
+  Aufbau und Aktualisierung einer OSM-basierten Karten mit osm2pgsql%
 }{%
 }{%
-  Eine Karte mit QGIS zu erstellen ist einfach~-- aber wie erstellt man eine gute Karte? Die
-  Demosession soll Grundlagen der Kartengestaltung vermitteln: wie man gute Farben wählt, wie groß
-  oder klein Schriften sein darf und welche Liniendicke gut aussieht. Nach einem kurzen Teil mit
-  Theorie folgt die praktische Umsetzung in QGIS von Daten, über die Signaturen bis zum Drucklayout.%
+  Die Software osm2pgsql ermöglicht einen konfigurierbaren Import und eine Aktualisierung der
+  OpenStreetMap-Daten in eine PostgreSQL/PostGIS-Datenbank. Hier dient die Erstellung und das
+  Updaten der Karte, welche mit QGIS erstellt wird, als Beispiel. Die Infrastruktur von
+  OpenStreetMap in Kombination mit der Software osm2pgsql macht eine fortlaufende automatische
+  Aktualisierung möglich. In der Demosession werden die Konfigurations- und
+  Kombinationsmöglichkeiten aufgezeigt.%
 }%
 
-\vspace{1.5cm}
-\input{sponsorentexte/414-geocockpit.tex}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% time: Thursday 17:55
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-58105-neue-methoden-zur-autarken-indoor-positionsbestimmung/
+% time: Thursday 12:20
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84266-python-in-qgis-ein-blick-auf-die-schnittstellen-und-ihre-sicherheit/
 
 %
-\newTimeslot{17:55}
+\newTimeslot{12:20}
 \noindent\abstractHSeins{%
-  Philipp Fiedler, Benjamin Würzler%
+  Isabelle Korsch, Johannes Kröger%
 }{%
-  Neue Methoden zur autarken Indoor-Positionsbestimmung%
+  Python in QGIS~-- ein Blick auf die Schnittstellen und ihre Sicherheit%
 }{%
 }{%
-  Wie kann die eigene Position in einem Gebäude bestimmt werden, wenn jede bekannte Infrastruktur
-  fehlt? Im Projekt "`Denied Areas"' erforscht das Bundesamt für Kartographie und Geodäsie innovative
-  Wege zur autarken Positionsbestimmung~-- unabhängig von WLAN und Bluetooth. Mithilfe tragbarer
-  Sensoren werden potenzielle Lösungen untersucht und erprobt. Erleben Sie spannende Einblicke in
-  aktuelle Ansätze und Technologien im Bereich der Indoor-Positionsbestimmung und -Navigation.%
+  Wie funktionieren Profile und Projekte in QGIS und welche Möglichkeiten bietet QGIS hier mit
+  Python den Funktionsumfang zu erweitern und anzupassen? Zum Beispiel können in Profilen Plugins
+  oder eigene Ausdrucksfunktionen liegen, in Projekten Makros und in Stilen Aktionen enthalten sein.
+  Wir wollen das Potential dieser Schnittstellen betrachten und werfen dabei auch einen kritischen
+  Blick auf sicherheitsrelevante Aspekte.%
 }%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% time: Thursday 17:55
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57817-merginmaps-mobile-geodatenerfassung-beim-regionalverband-ruhr/
+% time: Thursday 14:15
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84186-open-source-tools-zur-erstellung-von-3d-tiles-erfahrungen-und-herausforderungen/
+
+%
+\newTimeslot{14:15}
+\noindent\abstractHSdrei{%
+  Martin Alzueta%
+}{%
+  Open Source Tools zur Erstellung von 3D Tiles~-- Erfahrungen und Herausforderungen%
+}{%
+}{%
+  Ein praxisnaher Einblick in die Erstellung von 3D Tiles für einen digitalen Zwilling mit Open
+  Source Tools~-- von der Datenaufbereitung verschiedener Geodatenformate bis zu Herausforderungen
+  bei Konvertierung und Visualisierung.%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 14:15
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-82998-mapbender-anwendertreffen/
+
+%
+
+\noindent\abstractOther{%
+  Genoveva Pottgiesser%
+}{%
+  Mapbender Anwendertreffen%
+}{%
+}{%
+  Mapbender (https://mapbender.org/) ist ein Open-Source-WebGIS, das bereits seit über 20 Jahren
+  entwickelt und vielfältig eingesetzt wird. Die Software zur Erstellung von webbasierten
+  Kartenanwendungen bietet mächtige Werkzeuge zur Erfassung, Anzeige, Bearbeitung und Verwaltung von
+  Geodaten.
+  Im Rahmen der FOSSGIS möchten wir in einem Mapbender Anwendertreffen alle Interessierten zu
+  Austausch, Diskussion und Networking einladen.%
+}%
+{%
+  BoF1 (ZHG 001)%
+}%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 14:15
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-82548-indoor-osm/
+
+%
+
+\noindent\abstractOther{%
+  Tobias Knerr, Volker Krause%
+}{%
+  Indoor OSM%
+}{%
+}{%
+  Ein Treffen für alle, die als Mapper oder Entwickler mit Indoor-Karten in OpenStreetMap zu tun
+  haben%
+}%
+{%
+  BoF2 (ZHG 005)%
+}%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 14:15
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84073-openstreetmap-fur-und-mit-offentlicher-verwaltung-und-unternehmen/
+
+%
+
+\noindent\abstractAnwBoFdrei{%
+  Tobias Jordans, Lars Lingner, Christopher Lorenz%
+}{%
+  OpenStreetMap für und mit öffentlicher Verwaltung und Unternehmen%
+}{%
+}{%
+  Wie können Organisationen der öffentlichen Hand und Unternehmen OpenStreetMap-Daten sinnvoll
+  nutzen~-- und gleichzeitig dazu beitragen, OSM weiter zu verbessern? Welche Best Practices haben
+  sich etabliert, und welche typischen Stolpersteine gilt es zu vermeiden?%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 14:50
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84253-die-mobidata-bw-integrationsplattform-public-money-code-und-data/
+
+%
+\newTimeslot{14:50}
+\noindent\abstractHSeins{%
+  Thorsten Fröhlinghaus%
+}{%
+  Die MobiData BW® Integrationsplattform: Public Money, Code und Data%
+}{%
+}{%
+  Die MobiData BW® Integrationsplattform ist ein von der Nahverkehrsgesellschaft Baden-Württemberg
+  und Dienstleistern entwickeltes Open-Source-Projekt. Kommunale und kommerzielle Mobilitätsdaten zu
+  u. a. Sharing-Angeboten, Parken, Ladesäulen und Baustellen werden rechtlich und technisch
+  gebündelt und über offene APIs bereitgestellt. MobiData BW® sichert dabei Qualität und Aktualität
+  und erfüllt durch die Veröffentlichung auf der Mobilithek kommunale Datenlieferungspflichten.%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 14:50
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84333-actinia-copilot-urban-effizientere-stadtanalysen-mit-ki-und-open-source/
 
 %
 
 \noindent\abstractHSzwei{%
-  Stefan Overkamp%
+  Markus Neteler, Hinrich Paulsen%
 }{%
-  MerginMaps~-- Mobile Geodatenerfassung beim Regionalverband Ruhr%
+  actinia-copilot URBAN: Effizientere Stadtanalysen mit KI und Open Source%
 }{%
 }{%
-  Seit 2024 setzt der Regionalverband Ruhr (RVR) die Software MerginMaps ein.
-  Auslöser war die gute Integrationsmöglichkeit in die GDI des RVR.
-  Wesentliche Funktionen
-  - mobile Datenerfassung (Punkt, Linie, Fläche) im Gelände und Synchronisieren ins Backend
-  - Weiterbearbeiten in QGIS mittels Plugin
-  - Arbeiten auf einem gemeinsamen Datenbestand mit Erkennung von Konflikten
-  - Versionierung aller Änderungen und dabei detaillierte Dokumentation%
+  "`actinia-Copilot URBAN"'~-- ein von der European Space Agency (ESA) kofinanziertes
+  Open-Source-KI-System~-- verbindet Large Language Models (LLM) mit Geodatenverarbeitung. Es
+  ermöglicht Stadtplanern und Kommunen, Klimaanpassungsprojekte durch natürliche Sprachabfragen
+  umzusetzen, indem komplexe Geo- und Erdbeobachtungsdaten ohne tiefgreifende technische
+  Fachkenntnisse zugänglich gemacht werden.%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 14:50
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84268-moderne-cloud-daten-in-qgis/
+
+%
+
+\noindent\abstractHSvier{%
+  Isabelle Korsch, Johannes Kröger%
+}{%
+  Moderne Cloud-Daten in QGIS%
+}{%
+}{%
+  Cloud-optimized GeoTIFF, COPC, FlatGeoBuf, PMTiles, GeoParquet...~-- Moderne "`Cloud"-Formate haben
+  in den letzten Jahren Einzug in die GIS-Welt gehalten. Für manche bereits ein alter Hut, aber
+  nicht jed\textbackslash1(\textbackslash2) hat sich schon einmal rangetraut. In dieser Demosession zeigen wir in praktischen
+  Beispielen wie der Umgang mit cloud-optimierten Datensätzen in QGIS gelingt und was ihre Vorteile
+  sind.%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 15:25
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-82394-ml-mit-satellitenbildern-in-der-geo-engine-eine-operationalisierung-von-ml-diensten/
+
+%
+\newTimeslot{15:25}
+\noindent\abstractHSzwei{%
+  Dr. Christian Beilschmidt%
+}{%
+  ML mit Satellitenbildern in der Geo Engine: Eine Operationalisierung von ML-Diensten%
+}{%
+}{%
+  Die Geo Engine ermöglicht Geoanalysen in der Cloud, von der Definition von Workflows über
+  OGC-Schnittstellen bis zu Python-Notebooks. Der Vortrag zeigt die Erstellung einer
+  Machine-Learning-Anwendung mit Sentinel-2-Bildern und einem ML-Klassifikator in Geo Engine. Es
+  wird demonstriert, wie Modelle ins ONNX-Format transformiert, registriert und in Workflows
+  integriert werden, sowie die Operationalisierung bestehender ML-Modelle wie eine Wolkenmaskierung.%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 15:25
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-83718-postgis-stletters-worte-sagen-manchmal-mehr/
+
+%
+
+\noindent\abstractHSdrei{%
+  Astrid Emde%
+}{%
+  PostGIS ST\_Letters~-- Worte sagen manchmal mehr%
+}{%
+}{%
+  Warum nach Geodaten suchen, wo es doch die PostGIS-Funktion ST\_Letters gibt, die im Nu Geometrien
+  erzeugt?
+  ST\_Letters ist eine recht unbekannte Funktion, die einen Text übergeben bekommt und diesen als
+  Geometrie ausgibt. Genauer wird die Zeichenfolge von ST\_Letters als Multipolygon ausgegeben.
+  https://postgis.net/docs/ST\_Letters.html%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 15:30
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84105-automatische-prompt-optimierung-mit-dspy/
+
+%
+\newTimeslot{15:30}
+\noindent\abstractHSdrei{%
+  Maximilian Herbers%
+}{%
+  Automatische Prompt‑Optimierung mit DSPy%
+}{%
+}{%
+  Der Aufstieg von LLMs und VLMs eröffnet neue Wege der Datenverarbeitung und -analyse, wobei die
+  Qualität der Ergebnisse stark von der Formulierung der Prompts abhängt. In diesem Lightning Talk
+  wird das Open-Source-Framework DSPy vorgestellt, das die Entwicklung, das Testen und die
+  automatisierte Optimierung von Prompts in einen reproduzierbaren, recheneffizienten
+  Python-Workflow integriert.%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 16:45
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84334-qwc2-basierte-unterstutzung-der-manahmenplanung-im-nationalpark-schwarzwald/
+
+%
+\newTimeslot{16:45}
+\noindent\abstractHSeins{%
+  Christoph Dreiser%
+}{%
+  QWC2-basierte Unterstützung der Maßnahmenplanung im Nationalpark Schwarzwald%
+}{%
+}{%
+  Im Referat für Geodatenmanagement der Nationalparkverwaltung wurde ein integriertes
+  WebGIS-basiertes Managementinstrument erstellt. Es dient der räumlichen und zeitlichen
+  Koordination von Maßnahmen auf der Fläche des Nationalparks, sowie der Sicherstellung ihrer natur-
+  und artenschutzkonformen Umsetzung. Die Datenhaltung ist in PostGIS, die Dateneingabe und
+  Abstimmungskommunikation zwischen Planern und naturschutzrechlichem Kontrollteam erfolgt im QGIS
+  Web-Client (QWC2) mit dem Editor-Plugin.%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 16:45
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84255-vom-desktop-ins-web-der-neue-atlas-der-schweiz/
+
+%
+
+\noindent\abstractHSzwei{%
+  Alexander Müdespacher%
+}{%
+  Vom Desktop ins Web~-- der neue Atlas der Schweiz%
+}{%
+}{%
+  Der Atlas der Schweiz ist der offizielle Nationalatlas und wird seit 1961 von der ETH Zürich
+  herausgegeben. Die Desktop-Version (gestartet in 2016) basiert auf einem interaktiven 3D-Globus
+  mit über 400 thematischen Karten. Dank neuer Webtechnologien~-- vom Rendering, über UI bis zu
+  Geodatenformaten~-- konnte der Atlas ins Web migriert und einer grösseren Nutzerschaft zugänglich
+  gemacht werden. Der Vortrag zeigt Konzeption, UX-Design, Architektur und den Einsatz offener
+  Webtechnologien.%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 16:45
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84209-optimierung-von-rasterdaten-mit-gdal/
+
+%
+
+\noindent\abstractHSdrei{%
+  Dennis Davidsohn%
+}{%
+  Optimierung von Rasterdaten mit GDAL%
+}{%
+}{%
+  Luftbilder spielen in vielen Anwendungen eine zentrale Rolle und werden meist als GeoTIFF
+  gespeichert. Die Eigenschaften solcher Rasterdaten stellen jedoch häufig eine Herausforderung für
+  Speicherung, Verarbeitung und Darstellung dar. In diesem Vortrag werden Möglichkeiten aufgezeigt,
+  Rasterdaten mit GDAL zu optimieren.%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 16:45
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-83057-umstieg-auf-qgis-in-der-offentlichen-verwaltung/
+
+%
+
+\noindent\abstractOther{%
+  ChristianSebaly%
+}{%
+  Umstieg auf QGIS in der öffentlichen Verwaltung%
+}{%
+}{%
+  In der öffentlichen Verwaltung etabliert sich QGIS zunehmend als Standard im Desktop-GIS-Bereich.
+  Neben der unabhängigen Nutzung ohne Herstellerbindung und einer breiten Unterstützung offener
+  Standards sind kontinuierliche Weiterentwicklung, hohe Qualität, langfristige Zukunftssicherheit
+  und digitale Souveränität entscheidende Faktoren, die für den Einsatz von QGIS sprechen.%
+}%
+{%
+  BoF1 (ZHG 001)%
+}%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 16:45
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-83033-mapserver-anwendertreffen/
+
+%
+
+\noindent\abstractOther{%
+  Henning Jensen%
+}{%
+  MapServer Anwendertreffen%
+}{%
+}{%
+  MapServer ist eine Open-Source-Anwendung, mit der räumliche Daten über standardisierte
+  OGC-Schnittstellen veröffentlicht werden können. Dieses Anwendertreffen bietet die Gelegenheit,
+  MapServer-Nutzende (und solche, die es werden wollen) in einem konstruktiven Austausch
+  zusammenzubringen.%
+}%
+{%
+  BoF2 (ZHG 005)%
+}%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 16:45
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84059-lizmap-webclient-mit-qgis-server-und-py-qgis-server/
+
+%
+
+\noindent\abstractAnwBoFdrei{%
+  Günter Wagner%
+}{%
+  Lizmap Webclient mit QGIS-Server und Py-QGIS-Server%
+}{%
+}{%
+  Diese Fragestunde, kombiniert mit Demo-Beispielen und ggf. Erfahrungsberichten, ermöglicht
+  Interessierten einen Einblick in den Webclient Lizmap in Kombination mit dem QGIS-Server (und dem
+  Py-QGIS-Server). Neben den Fragen der Teilnehmer werden spezielle Funktionen und Neuerungen
+  vorgestellt. Dabei ist die Expert:innenfragestunde sowohl für neu Interessierte als auch für
+  Anwender vom Lizmap Webclient interessant.%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 16:50
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84022-indikatorenberechnung-mit-pygeoapi-fur-ein-sozialraummonitoring-in-kommonitor/
+
+%
+\newTimeslot{16:50}
+\noindent\abstractHSvier{%
+  Isabell Zerria, Sebastian Drost%
+}{%
+  Indikatorenberechnung mit pygeoapi für ein Sozialraummonitoring in KomMonitor%
+}{%
+}{%
+  Die Open Source Software KomMonitor ermöglicht die Berechnung komplexer Leitindikatoren auf Basis
+  von sozio-demografischen Geo- und Zeitreihendaten. Zu diesem Zweck wurde pygeoapi und prefect als
+  Prozessmanager in die Softwarearchitektur von KomMonitor integriert, um fachspezifische Prozesse
+  über den OGC API~-- Processes Schnittstellenstandard bereitzustellen. Dieser Ansatz ermöglicht die
+  Ableitung komplexer Sozialindikatoren zur Unterstützung eines umfassenden Sozialraummonitorings.%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 17:20
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84168-management-von-kartenstilen-mit-ogc-api-styles/
+
+%
+\newTimeslot{17:20}
+\noindent\abstractHSzwei{%
+  Jan Suleiman%
+}{%
+  Management von Kartenstilen mit OGC API~-- Styles%
+}{%
+}{%
+  Der Standard OGC API~-- Styles ermöglicht die einheitliche Verwaltung und Veröffentlichung von
+  Kartenstilen über offene Schnittstellen. Der Vortrag erläutert Konzepte, Vorteile und bestehende
+  Implementierungen wie GeoServer und GeoStyler. Zudem werden aktuelle Lücken und künftige
+  Entwicklungen aufgezeigt, um Stilmanagement in Geodateninfrastrukturen interoperabler und
+  effizienter zu gestalten.%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 17:20
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-83731-sentinel-analysis-ready-data-freie-datenprodukte-und-tools/
+
+%
+
+\noindent\abstractHSdrei{%
+  Guido Riembauer%
+}{%
+  Sentinel Analysis Ready Data~-- freie Datenprodukte und Tools%
+}{%
+}{%
+  Sentinel-1 und Sentinel-2 liefern reichhaltige Erdbeobachtungsdaten, deren Vorverarbeitung jedoch
+  komplex ist. Der Vortrag zeigt praxisnah, wie frei verfügbare Analysis Ready Data-Produkte und
+  Open-Source-Tools (u.a. FORCE, SADASADAM, GRASS-GIS) den Einstieg erleichtern, Zeitreihenanalysen
+  ermöglichen und Sentinel-Daten für GIS-Workflows direkt nutzbar machen.%
 }%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % time: Thursday 17:55
-% URL: https://pretalx.com/fossgis2023/talk/fossgis2025-57806-brouter-und-brouter-web-fr-anfnger-und-fortgeschrittene/
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84295-unsere-daten-neu-denken-twin-information-system-twis/
+
+%
+\newTimeslot{17:55}
+\noindent\abstractHSeins{%
+  Dr. Heino Rudolf%
+}{%
+  Unsere Daten neu denken~-- Twin Information System (TwIS)%
+}{%
+}{%
+  Viele Städte erstellen sich Digitale Zwillinge, dabei geht es zumeist um hochaufgelöste
+  3D-Stadtmodelle. (Ein nutzbarer Digitaler Zwilling des Autos ist aber nicht das 3D-Abbild.)
+  Ein nutzbarer Urbaner Digitaler Zwilling ist ein dynamischer digitaler Repräsentant der Stadt, um
+  den aktuellen und zukünftigen Zustand der Stadt zu erkennen und Einfluss auf Prozesse und die
+  weitere Stadtentwicklung zu nehmen.
+  Mit GIS ist das nicht umzusetzen. Deshalb haben wir eine neue Technologie kreiert: TwIS.%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 17:55
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-83049-apache-superset-und-ogc-wfs-offene-standards-fur-business-intelligence/
+
+%
+
+\noindent\abstractHSzwei{%
+  Charlie Liebscher, Jan Suleiman%
+}{%
+  Apache Superset und OGC WFS~-- Offene Standards für Business Intelligence%
+}{%
+}{%
+  Apache Superset ist eine Open-Source Business Intelligence Plattform und Bestandteil des
+  CivitasConnect UDP Core. Im Rahmen des Förderprojekts Connected Urban Twins (BMWSB, KTS) wurde die
+  Implementierung von OGC WFS als Datenquelle beauftragt und entwickelt. Damit wird die
+  Geodatenkomponente von Apache Superset im Blick auf offene Datenstandards gestärkt.%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 17:55
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-84332-geospatial-narratives-kritische-lesbarkeit-von-satellitenbildern/
 
 %
 
 \noindent\abstractHSdrei{%
-  Arndt Brenschede, Serge Bellina%
+  Julian Peschel%
 }{%
-  BRouter und BRouter-Web für Anfänger und Fortgeschrittene%
+  Geospatial Narratives~-- kritische Lesbarkeit von Satellitenbildern%
 }{%
 }{%
-  BRouter ist das flexibelste Werkzeug für Streckenplanung auf Basis von OSM-Daten und seit 10
-  Jahren besonders bei Radfahrern und Wanderern beliebt. Wir geben zunächst eine Einführung in die
-  wichtigsten Verwendungsarten, sowohl mobil als auch am heimischen PC, und richten uns dabei auch
-  an Neu-Einsteiger. Im zweiten Teil des Vortrags geht es dann um spannende Neu-Enwicklungen,
-  insbesondere um die Berücksichtigung von Umgebungseigenschaften für noch bessere
-  Routing-Ergebnisse.%
+  Wie können Satellitendaten als narratives und analytisches Medium im Journalismus
+  kontextualisiert, überprüfbar und zitierfähig gemacht werden? Der Vortrag stellt die Plattform
+  [Geospatial Narratives](https://eric-corduroy.github.io/geospatial-narratives/index.html) vor, die
+  die oft fehlenden Metadaten von Satellitenbildern in den Fokus rückt und sich als offenes,
+  kuratorisches sowie methodisches Werkzeug zur Sammlung, Kontextualisierung und medienkritischen
+  Einordnung versteht.%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% time: Thursday 19:00
+% URL: https://pretalx.com/fossgis2023/talk/fossgis2026-85176-mitgliederversammlung-fossgis-e-v/
+
+%
+\newTimeslot{19:00}
+\noindent\abstractHSzwei{%
+  %
+}{%
+  Mitgliederversammlung FOSSGIS e.V.%
+}{%
+}{%
+  Die jährliche Mitgliederversammlung findet im Rahmen der FOSSGIS Konferenz in Göttingen statt. Die
+  Einladung ging an alle Mitglieder im Voraus per Mail. Auch auf der FOSSGIS neu beigetretenen
+  Miglieder können natürlich teilnehmen.%
 }%
 
 

@@ -28,47 +28,51 @@ latex_substitutions = [
 
 # dict to define the order of the rooms in the booklet
 rooms_order = {
-    "HS1 (Aula)" : 1,
-    "HS2 (S10)" : 2,
-    "HS3 (S1)" : 3,
-    "HS4 (S2)" : 4,
-    "Bof1 (S8)" : 5,
-     "Bof2 (S9)" : 6,
-    "Bof3/Expert:innen" : 7,
-    "WS1 (106)" : 8,
-    "WS2 (107)" : 9,
-    "WS3 (108)" : 10,
-    "Poster (Zelt)" : 11,
-    "FOSSGIS-Stand" : 12
+    "HS1 (ZHG 011)" : 1,
+    "HS2 (ZHG 010)" : 2,
+    "HS3 (ZHG 009)" : 3,
+    "HS4 (ZHG 008)" : 4,
+    "BoF1 (ZHG 001)" : 5,
+    "BoF2 (ZHG 005)" : 6,
+    "Bof3/Expert:innen (ZHG 006)" : 7,
+    "WS1 (VG 1.104)" : 8,
+    "WS2 (VG 1.103)" : 9,
+    "WS3 (VG 1.102)" : 10,
+    "Opening OSM (MH 09)": 11,
+    "OSM1 (MH 11)": 12,
+    "OSM2 (MH 10)": 13,
+    "OSM3 (MH 13": 14,
+    "Poster (Zelt)" : 15,
+    "FOSSGIS-Stand" : 16
 }
 
 commands = {
-    "HS1 (Aula)": {
-        "name": "HS1 (Aula)",
+    "HS1 (ZHG 011)": {
+        "name": "HS1 (ZHG 011)",
         "command": "\\abstractHSeins"
         },
-    "HS2 (S10)": {
-        "name": "HS2 (S10)",
+    "HS2 (ZHG 010)": {
+        "name": "HS2 (ZHG 010)",
         "command": "\\abstractHSzwei"
         },
-    "HS3 (S1)": {
-        "name": "HS3 (S1)",
+    "HS3 (ZHG 009)": {
+        "name": "HS3 (ZHG 009)",
         "command": "\\abstractHSdrei"
         },
-    "HS4 (S2)": {
-        "name": "HS4 (S2)",
+    "HS4 (ZHG 008)": {
+        "name": "HS4 (ZHG 008)",
         "command": "\\abstractHSvier"
         },
-    "Bof1 (S8)": {
-        "name": "Bof1 (S8)",
+    "Bof1 (ZHG 001)": {
+        "name": "Bof1 (ZHG 001)",
         "command": "\\abstractAnwBoFeins"
         },
-   "Bof2 (S9)": {
-        "name": "BoF2 (S9)",
+   "Bof2 (ZHG 005)": {
+        "name": "BoF2 (ZHG 005)",
         "command": "\\abstractAnwBoFzwei"
         },
-   "Bof3/Expert:innen": {
-        "name": "BoF3/Expert:innen",
+   "Bof3/Expert:innen (ZHG 006)": {
+        "name": "BoF3/Expert:innen (ZHG 006)",
         "command": "\\abstractAnwBoFdrei"
         },
 }
