@@ -231,6 +231,7 @@ height=169mm, contents={%
 \definecolor{dezentrot}{cmyk}{0 .24 0.29 .04}
 \definecolor{hellgelb}{cmyk}{0 .02 0.36 0}
 \definecolor{hellgruen}{cmyk}{0.10 .0 0.22 0.05}
+\definecolor{fossgis}{cmyk}{0.0 0.47 1.0 0.07}
 
 % abstract at HS 1
 \DeclareRobustCommand*{\abstractHSeins}[4]%
@@ -270,7 +271,7 @@ height=169mm, contents={%
   \setAbstract{#1}{#2}{#3}{#4}{eins}{Anw./BoF1 (ZHG 001)}
 }
 % table heading for BoF1 
-\newcommand{\BoFeins}{\cellcolor{eins}\small Anw.\,/\,BoF\,1\,(ZHG 001)}
+\newcommand{\BoFeins}{\cellcolor{eins}\scalebox{0.7}[1.0]{Anw./BoF1\,(ZHG 001)}}
 
 % abstract at Anwendertreffen | BoF2 (S~9)
 \DeclareRobustCommand*{\abstractAnwBoFzwei}[4]%
@@ -278,15 +279,15 @@ height=169mm, contents={%
   \setAbstract{#1}{#2}{#3}{#4}{zwei}{Anw./BoF2 (ZHG 005)}
 }
 % table heading for BoF2 
-\newcommand{\BoFzwei}{\cellcolor{zwei}\small Anw.\,/\,BoF\,2\,(ZHG 005)}
+\newcommand{\BoFzwei}{\cellcolor{zwei}\scalebox{0.7}[1.0]{Anw./BoF2\,(ZHG 005)}}
 
-% abstract at Anwendertreffen | BoF3/Exp (Sen.)
+% abstract at Anwendertreffen | BoF3/Exp
 \DeclareRobustCommand*{\abstractAnwBoFdrei}[4]%
 {%
   \setAbstract{#1}{#2}{#3}{#4}{audimax}{BoF3/Exp. (ZHG 006)}
 }
 % table heading for BoF3/Exp
-\newcommand{\BoFdrei}{\cellcolor{audimax}\small Exp./BoF3(ZHG 006)}
+\newcommand{\BoFdrei}{\cellcolor{audimax} \scalebox{0.7}[1.0]{Exp./BoF3(ZHG 006)}}
 
 % abstract at a different location
 \newcommand{\abstractOther}[5]%
