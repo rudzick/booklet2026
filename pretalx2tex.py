@@ -42,7 +42,7 @@ rooms_order = {
     "OSM1 (MH 11)": 12,
     "OSM2 (MH 10)": 13,
     "OSM3 (MH 13": 14,
-    "Poster (Zelt)" : 15,
+    "Poster (Foyer ZHG)" : 15,
     "FOSSGIS-Stand" : 16
 }
 
