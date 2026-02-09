@@ -1,12 +1,20 @@
-
+((% if type != 'Poster-Session' -%))
 % time: ((( date|datetimeformat('%A %H:%M') )))
-% URL: https://pretalx.com/fossgis2023/talk/((( slug )))/
+((% else -%))%
+% time:  ((( date|datetimeformat(' ') )))
+\newSmallTimeslot{}
+((% endif %))
+% URL: https://pretalx.com/fossgis2026/talk/((( slug )))/
 
 ((% if type == 'Workshop (Pr\u00e4senz)' -%))
+((% if type != 'Poster-Session' -%))
 ((% if last_timeslot != date %))\newSmallTimeslot{((( date|datetimeformat )))}((% endif %))
+((% endif %))
 \noindent\workshop{((( title|e )))}{((( speakers|e )))}{((( room|e )))}
 \workshopspace((% else -%))%
+((% if type != 'Poster-Session' -%))
 ((% if last_timeslot != date %))\newTimeslot{((( date|datetimeformat )))}((% endif %))
+((% endif %))
 \noindent((( command ))){%
   ((( speakers|e )))%
 }{%

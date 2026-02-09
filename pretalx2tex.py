@@ -42,7 +42,7 @@ rooms_order = {
     "OSM1 (MH 11)": 12,
     "OSM2 (MH 10)": 13,
     "OSM3 (MH 13": 14,
-    "Poster (Foyer ZHG)" : 15,
+    "Posterausstellung" : 15,
     "FOSSGIS-Stand" : 16
 }
 
@@ -74,6 +74,10 @@ commands = {
    "Bof3/Expert:innen (ZHG 006)": {
         "name": "BoF3/Expert:innen (ZHG 006)",
         "command": "\\abstractAnwBoFdrei"
+        },
+   "Posterausstellung": {
+        "name": "Poster",
+        "command": "\\abstractPoster"
         },
 }
 default_cmd = {"name": "???", "command": "\\abstractOther"}
