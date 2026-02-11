@@ -235,6 +235,7 @@ height=169mm, contents={%
 \definecolor{grass}{HTML}{cdebb0}
 \definecolor{forest}{HTML}{add19e}
 \definecolor{water}{HTML}{aad3df}
+\definecolor{farmland}{HTML}{eef0d5}
 
 % abstract at HS 1
 \DeclareRobustCommand*{\abstractHSeins}[4]%
@@ -291,6 +292,13 @@ height=169mm, contents={%
 }
 % table heading for BoF3/Exp
 \newcommand{\BoFdrei}{\cellcolor{audimax} \scalebox{0.7}[1.0]{Exp./BoF3(ZHG 006)}}
+
+% abstract for poster
+\DeclareRobustCommand*{\abstractPoster}[4]%
+{%
+  \setAbstract{#1}{#2}{#3}{#4}{farmland}{Poster}
+}
+
 % table heading for FOSSGIS MV
 \newcommand{\FOSSGISMV}{\cellcolor{fossgis} HS\,2\,(ZHG\,010)}
 
