@@ -38,12 +38,13 @@ rooms_order = {
     "WS1 (VG 1.104)" : 8,
     "WS2 (VG 1.103)" : 9,
     "WS3 (VG 1.102)" : 10,
-    "Opening OSM (MH 09)": 11,
-    "OSM1 (MH 11)": 12,
-    "OSM2 (MH 10)": 13,
-    "OSM3 (MH 13": 14,
-    "Posterausstellung" : 15,
-    "FOSSGIS-Stand" : 16
+    "Opening OSM (MN 09)": 11,
+    "OSM1 (MN 11)": 12,
+    "OSM2 (MN 10)": 13,
+    "OSM3 (MN 12)": 14,
+    "Community Sprint": 15,
+    "Posterausstellung" : 16,
+    "FOSSGIS-Stand" : 17
 }
 
 commands = {
