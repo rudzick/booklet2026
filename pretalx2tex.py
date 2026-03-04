@@ -64,11 +64,11 @@ commands = {
         "name": "HS4 (ZHG 008)",
         "command": "\\abstractHSvier"
         },
-    "Bof1 (ZHG 001)": {
+    "BoF1 (ZHG 001)": {
         "name": "Bof1 (ZHG 001)",
         "command": "\\abstractAnwBoFeins"
         },
-   "Bof2 (ZHG 005)": {
+   "BoF2 (ZHG 005)": {
         "name": "BoF2 (ZHG 005)",
         "command": "\\abstractAnwBoFzwei"
         },

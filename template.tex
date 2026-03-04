@@ -13,7 +13,7 @@
 \noindent\workshop{((( title|e )))}{((( speakers|e )))}{((( room|e )))}
 \workshopspace((% else -%))%
 ((% if type != 'Poster-Session' -%))
-((% if last_timeslot != date %))\newTimeslot{((( date|datetimeformat )))}((% endif %))
+((% if last_timeslot != date %))\newSmallTimeslot{((( date|datetimeformat )))}((% endif %))
 ((% endif %))
 \noindent((( command ))){%
   ((( speakers|e )))%
