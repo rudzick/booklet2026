@@ -303,13 +303,13 @@ height=169mm, contents={%
 \newcommand{\BoFdrei}{\cellcolor{audimax} \scalebox{0.7}[1.0]{Exp./BoF3(ZHG 006)}}
 
 % abstract for poster
-\DeclareRobustCommand*{\abstractPoster}[4]%
+\DeclareRobustCommand*{\abstractPoster}[5]%
 {%
-  \setAbstract{#1}{#2}{#3}{#4}{farmland}{Poster}
+  \setAbstract{#1}{#2}{#3}{#4}{farmland}{Poster #5}
 }
 
 % table heading for FOSSGIS MV
-\newcommand{\FOSSGISMV}{\cellcolor{fossgis} HS\,2\,(ZHG\,010)}
+\newcommand{\FOSSGISMV}{\cellcolor{fossgis} BoF\,1\,(ZHG\,001)}
 
 % table heading for MN 09
 \newcommand{\MNa}{\cellcolor{water} Opening\,OSM\,(MN\,09)}
@@ -322,6 +322,11 @@ height=169mm, contents={%
 \newcommand{\abstractOther}[5]%
 {%
   \setAbstract{#1}{#2}{#3}{#4}{hellorange}{#5}
+}
+% abstract at a different location
+\newcommand{\abstractFOSSGIS}[5]%
+{%
+  \setAbstract{#1}{#2}{#3}{#4}{fossgis}{#5}
 }
 
 % infobox for workshops (they don't have an abstract in the booklet)
