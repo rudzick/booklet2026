@@ -71,6 +71,11 @@ height=169mm, contents={%
 \AddLayersAtBeginOfPageStyle{freitag}{freitageven}
 \AddLayersAtBeginOfPageStyle{freitag}{freitagodd}
 
+% define Posterausstellung page style
+\newpairofpagestyles[scrheadings]{posterausstellung}{}
+\AddLayersAtBeginOfPageStyle{posterausstellung}{postereven}
+\AddLayersAtBeginOfPageStyle{posterausstellung}{posterodd}
+
 % define Samstag page style
 \newpairofpagestyles[scrheadings]{samstag-table}{}
 \AddLayersAtBeginOfPageStyle{samstag-table}{samstageven}
@@ -90,6 +95,9 @@ height=169mm, contents={%
   }{}%
   \ifthenelse{\equal{\conferenceDay}{\freitag}}{%
     \pagestyle{freitag}%
+  }{}%
+  \ifthenelse{\equal{\conferenceDay}{\posterausstellung}}{%
+    \pagestyle{posterausstellung}%
   }{}%
   \ifthenelse{\equal{\conferenceDay}{\samstag}}{%
     \pagestyle{samstag}%
